@@ -1,12 +1,12 @@
 const Search = (props) => {
 
-    const {filterToggle} = props
+    const {filterToggle, search} = props
 
     return (
         <div className={"search"}>
             <div className={'search-div'}>
                 <h1>Search properties to rent</h1>
-                <input placeholder={"Search Property Name"} className={'search-bar'}/>
+                <input placeholder={"Search Property Name"} className={'search-bar'} id={"search-input"} onInput={search}/>
             </div>
             <div className={"filter-div"}>
                 <div className={"filter-options-div"}>

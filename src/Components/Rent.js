@@ -18,10 +18,25 @@ const Rent = () => {
         }
     }
 
+    const search = ()=>{
+        const searchVal = document.getElementById("search-input").value
+        const properties = document.getElementsByClassName("card")
+        for (const propertiesKey of properties) {
+            const name = propertiesKey.getElementsByTagName('h3')[0].textContent
+            const location = propertiesKey.getElementsByTagName('p')[0].textContent
+            if(name.toLowerCase().includes(searchVal.toLowerCase()) || location.toLowerCase().includes(searchVal.toLowerCase())){
+                propertiesKey.style.display = "block"
+            }else{
+                propertiesKey.style.display = "none"
+            }
+        }
+    }
+
+
     return (
         <>
             <main>
-                <Search filterToggle={filterToggle}/>
+                <Search filterToggle={filterToggle} search={search}/>
                 <div className={"cards"}>
                     {rentProperty.properties.map((element, index) => {
                         return <Card key={index} name={element.Name} image={element.image} address={element.address}
