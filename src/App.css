@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
+body{
+    background: rgb(244, 247, 252);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Header*/
+.header-title{
+    font-weight: 500;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-title-span{
+    color: red;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header-img{
+    margin: 10px 0 8px 3em;
+    width: 45px;
 }
 
-.App-link {
-  color: #61dafb;
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*main*/
+
+main{
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 0 50px;
+}
+
+/*Search*/
+
+.search-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar{
+    padding: 0.75em;
+    border-radius: 6px;
+    border: 2px solid #E1E1E1;
+    margin-left: 2em;
+}
+
+/*filter*/
+
+.filter-cancel{
+    display: none;
+    padding: 0.9em 2.5em;
+    box-sizing: border-box;
+    color: #6f64ed;
+    background: white;
+    border: solid #6f64ed;
+    cursor: pointer;
+}
+
+.filter-button{
+    display: none;
+    color: white;
+    background: #6f64ed;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.75em;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    /*box-sizing: border-box;*/
+    border: none;
+    border-radius: 50%;
+}
+
+sub{
+    color: gray;
+}
+
+h4{
+    margin: 0;
+}
+
+.filter-div{
+    display: flex!important;
+    background: white;
+    padding: 1em 0;
+    border-radius: 6px;
+    justify-content: space-evenly;
+}
+
+.filter-search{
+    color: white;
+    background: #6f64ed;
+    border: none;
+    border-radius: 6px;
+    padding: 1em 2.5em;
+    cursor: pointer;
+}
+
+.filter-vertical-border-div{
+    border-right: 2px solid #E1E1E1;
+}
+
+.filter-p{
+    margin: 0;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+/*Property-Card*/
+
+.cards{
+    margin-top: 2.5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,280px);
+    row-gap: 25px;
+    column-gap: 20px;
+    justify-content: space-between;
+}
+
+.card{
+    background: white;
+    border-radius: 6px;
+}
+
+.card-details{
+    padding: 1em;
+}
+
+.card-img{
+    width: 280px;
+    height: 180px;
+    border-radius: 6px 6px 0 0;
+}
+
+.card-price{
+    font-size: 1.5rem;
+    color: #6f64ed;
+}
+
+.card-name{
+    margin: 0;
+}
+
+.card-month,
+.card-address{
+    font-size: 0.85rem;
+    color:gray;
+}
+
+.card-address{
+    margin-top: 0.5em;
+}
+
+.card-hr{
+    border: 1px solid #E1E1E1;
+}
+
+.fa-bed,
+.fa-bath,
+.fa-layer-group{
+    color: #6f64ed;
+}
+
+.card-info-span{
+    font-size: 0.75rem;
+    color: gray;
+}
+
+.card-info{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+@media screen and (max-width: 977px) {
+    header{
+        justify-content: center;
+    }
+
+    .cards{
+        justify-content: space-evenly;
+    }
+
+    .filter-button{
+        display: block;
+    }
+
+    .filter-div{
+        display: block!important;
+        flex-direction: column;
+        position: fixed;
+        height: 100vh;
+        z-index: 1;
+        right: -250px;
+        top:0;
+        padding: 2em;
+        transition: right 0.5s;
+    }
+
+    .filter-cancel{
+        position: absolute;
+        bottom: 10%;
+        right: 20%;
+        display: block;
+    }
+
+    .filter-search{
+        position: absolute;
+        bottom: 18%;
+        right: 21%;
+    }
+
+    .filter-options-div{
+        margin-bottom: 1.5em;
+    }
 }

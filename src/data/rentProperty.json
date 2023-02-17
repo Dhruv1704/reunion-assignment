@@ -1,0 +1,148 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "Name": "Palm Harbor",
+      "image": "images/image1.jpg",
+      "address": {
+        "street": "142 Green Valley",
+        "state": "Mumbai",
+        "country": "IN"
+      },
+      "rent": "2,097",
+      "rooms": {
+        "beds": "3 Beds",
+        "bathroom": "2 Bathrooms"
+      },
+      "area": "5x7.5",
+      "moveInDate": "2023-03-17",
+      "propertyType": "Family House"
+    },
+    {
+      "id": 2,
+      "Name": "Beverly Springfield",
+      "image": "images/image2.jpg",
+      "address": {
+        "street": "432 Road",
+        "state": "Mumbai",
+        "country": "IN"
+      },
+      "rent": "1,100",
+      "rooms": {
+        "beds": "2 Beds",
+        "bathroom": "1 Bathrooms"
+      },
+      "area": "4x9",
+      "moveInDate": "2023-04-10",
+      "propertyType": "Family House"
+    },
+    {
+      "id": 3,
+      "Name": "Spring Ave",
+      "image": "images/image3.jpg",
+      "address": {
+        "street": "241 St",
+        "state": "New York",
+        "country": "USA"
+      },
+      "rent": "2,504",
+      "rooms": {
+        "beds": "4 Beds",
+        "bathroom": "3 Bathrooms"
+      },
+      "area": "7x9.5",
+      "moveInDate": "2023-05-27",
+      "propertyType": "Family House"
+    },
+    {
+      "id": 4,
+      "Name": "Sunny Grove Apartments",
+      "image": "images/image4.jpg",
+      "address": {
+        "street": "347 East 74th Street",
+        "state": "New York",
+        "country": "USA"
+      },
+      "rent": "6,000",
+      "rooms": {
+        "beds": "3 Beds",
+        "bathroom": "2 Bathrooms"
+      },
+      "area": "5x7.5",
+      "moveInDate": "2023-04-17",
+      "propertyType": "Family House"
+    },
+    {
+      "id": 5,
+      "Name": "Pine Tree Condos",
+      "image": "images/image5.jpg",
+      "address": {
+        "street": "1235 Juhu Tara Road",
+        "state": "Mumbai",
+        "country": "IN"
+      },
+      "rent": "3,000",
+      "rooms": {
+        "beds": "2 Beds",
+        "bathroom": "1 Bathrooms"
+      },
+      "area": "3x5",
+      "moveInDate": "2023-02-09",
+      "propertyType": "Family House"
+    },
+    {
+      "id": 6,
+      "Name": "Lakeview Manor",
+      "image": "images/image6.jpg",
+      "address": {
+        "street": "20-22 Wenlock Road",
+        "state": "London",
+        "country": "UK"
+      },
+      "rent": "2,570",
+      "rooms": {
+        "beds": "3 Beds",
+        "bathroom": "2 Bathrooms"
+      },
+      "area": "6x9",
+      "moveInDate": "2023-02-29",
+      "propertyType": "Family House"
+    },
+    {
+      "id": 7,
+      "Name": "Oakhurst Townhomes",
+      "image": "images/image7.jpg",
+      "address": {
+        "street": "67 Wall Street",
+        "state": "New York",
+        "country": "USA"
+      },
+      "rent": "8,570",
+      "rooms": {
+        "beds": "4 Beds",
+        "bathroom": "4 Bathrooms"
+      },
+      "area": "6x7",
+      "moveInDate": "2023-01-01",
+      "propertyType": "Family House"
+    },
+    {
+      "id": 8,
+      "Name": "Hilltop Villas",
+      "image": "images/image8.jpg",
+      "address": {
+        "street": "Lodha Supremus",
+        "state": "Mumbai",
+        "country": "IN"
+      },
+      "rent": "1,570",
+      "rooms": {
+        "beds": "4 Beds",
+        "bathroom": "3 Bathrooms"
+      },
+      "area": "6x3",
+      "moveInDate": "2023-02-12",
+      "propertyType": "Family House"
+    }
+  ]
+}
