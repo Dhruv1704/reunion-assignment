@@ -14,6 +14,7 @@ const Rent = () => {
             filterDiv.style.right = "0"
         }else{
             setFilter("none")
+            filterDiv.reset();
             filterDiv.style.right = "-250px"
         }
     }

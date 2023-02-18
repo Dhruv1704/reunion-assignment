@@ -12,6 +12,10 @@ const Card = (props) => {
                     <strong className={"card-price"}>${rent}</strong>/<span className={"card-month"}>month</span>
                     <h3 className={"card-name"}>{name}</h3>
                     <p className={"card-address"}>{address.street} {address.state} {address.country}</p>
+                    <div className={"card-date-type"}>
+                        <p className={"card-property-type"}>{propertyType}</p>
+                        <p className={"card-date"}>{moveInDate}</p>
+                    </div>
                     <hr className={"card-hr"}/>
                     <div className={"card-info"}>
                         <div>

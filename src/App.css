@@ -83,6 +83,21 @@ h4{
     margin: 0;
 }
 
+.dropdown{
+    padding: 0.5em;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.date-picker{
+    padding: 0.45em;
+    border-radius: 6px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 .filter-div{
     display: flex!important;
     background: white;
@@ -95,6 +110,7 @@ h4{
     color: white;
     background: #6f64ed;
     border: none;
+    height: 3.5em;
     border-radius: 6px;
     padding: 1em 2.5em;
     cursor: pointer;
@@ -153,6 +169,19 @@ h4{
 
 .card-address{
     margin-top: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+.card-date-type{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7em;
+    color: gray;
+    margin: 0;
+}
+
+.card-date,.card-property-type{
+    margin: 0;
 }
 
 .card-hr{
@@ -174,6 +203,38 @@ h4{
     display: flex;
     justify-content: space-between;
     align-content: center;
+}
+
+/*slider*/
+.slider{
+    top: -5px;
+}
+
+.slider__range{
+    background-color: #6f64ed!important;
+}
+
+.slider__right-value{
+    color: black!important;
+    font-weight: bold;
+    right: -2px;
+    top: -10px;
+}
+
+.slider__left-value{
+    color: black!important;
+    font-weight: bold;
+    left: 1px;
+    top: -10px;
+}
+
+.thumb--zindex-4{
+    top: 14px;
+}
+
+.thumb--zindex-3{
+    top: 14px;
+    left: -0.8px;
 }
 
 @media screen and (max-width: 977px) {
