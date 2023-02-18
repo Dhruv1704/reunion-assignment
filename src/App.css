@@ -244,6 +244,7 @@ h4{
 
     .search-div{
         flex-direction: column;
+        text-align: center;
     }
 
     .search-bar{
